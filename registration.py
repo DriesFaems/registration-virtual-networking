@@ -14,7 +14,7 @@ TABLE_NAME = st.secrets["TABLE_NAME"]  # Replace with your table name
 airtable = Table(PERSONAL_ACCESS_TOKEN, BASE_ID, TABLE_NAME)
 
 # Create title for WHU MBA Streamlit App
-st.title("Registration Virtual Networking WHU June 2025")
+st.title("Registration Virtual Networking WHU July 2025")
 
 text = ""
 
