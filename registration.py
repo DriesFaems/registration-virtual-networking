@@ -87,7 +87,7 @@ if submit_form:
                 
                 record = {"Name": name.strip(), "Email": email.strip().lower(), "LinkedIn Profile": st.session_state.profile, "Date": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "Education": education}
                 airtable.create(record)
-                st.success("**Registration successful. You can now leave the registration.**")
+                st.success("**Registration successful. Here is the link for the zoom meeting: https://whuedu.zoom.us/j/92582180717 Please save zoom meeting in your calendar. You can now leave the registration.**")
                 
         except Exception as e:
             st.error(f"An error occurred while processing your PDF: {str(e)}. Please try uploading the file again.")
